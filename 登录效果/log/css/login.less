@@ -1,0 +1,127 @@
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #fff;
+}
+.logo{
+    width: 10rem;
+    height: 7.333333rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.get{
+    position: relative;
+    left: 50%;
+    margin-left: -4.266667rem;
+    top: -2.093333rem;
+    width: 8.533333rem;
+    height: 10.666667rem;
+    border-radius: .266667rem;
+    box-shadow: 0 0 5px #999;
+    background-color: #fff;
+    ul{
+        padding: .666667rem .533333rem;
+        li{
+            position: relative;
+            width: 7.466667rem;
+            height: 1.173333rem;
+            font-size: .4rem;
+            margin: .4rem 0;
+            &:nth-child(1):before{
+                content: "";
+                position: absolute;
+                top: .36rem;
+                left: .533333rem;
+                width: .4rem;
+                height: .48rem;
+                background: url(../img/user.png) no-repeat;
+                background-size: .4rem .48rem;
+            }
+            &:nth-child(2):before{
+                content: "";
+                position: absolute;
+                top: .36rem;
+                left: .533333rem;
+                width: .4rem;
+                height: .48rem;
+                background: url(../img/lock.png) no-repeat;
+                background-size: .4rem .48rem;
+            }
+            input{
+                width: 100%;
+                height: 100%;
+                border-radius: .266667rem;
+                text-indent: 3em;
+                background-color: #f8f8f8;
+            }
+            &:nth-child(3){
+                margin:.8rem 0 .613333rem;
+            }
+            button{
+                height: 100%;
+                width: 100%;
+                color: #fff;
+                border:.013333rem solid #b98bff;
+                border-radius: .586667rem;
+                background-color: #9c55f2;
+            }
+            &:nth-child(4){
+                overflow: hidden;
+                height: auto;
+                padding: 0 .693333rem;
+                font-size: .306667rem;
+                a{
+                    color: #656565;
+                    &:nth-child(1){
+                        float: left;
+                    }
+                    &:nth-child(2){
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+    .three{
+        position: relative;
+        width: 6.506667rem;
+        height: 2.666667rem;
+        margin: auto;
+        border-top: .013333rem solid #ccc;
+        display: flex;
+        justify-content: space-around;
+        &::before{
+            position: absolute;
+            content: "第三方账号登入";
+            top: -0.3rem;
+            padding: 0 .133333rem;
+            background-color: #fff;
+            font-size: .266667rem;
+        }
+        a{
+            flex: 1;
+            text-align: center;
+            padding-top: .8rem;
+            img{
+                width: 1.186667rem;
+                height: 1.186667rem;
+            }
+        }
+        // background-color: blueviolet;
+    }
+}

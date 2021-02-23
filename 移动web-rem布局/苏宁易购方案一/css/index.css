@@ -1,0 +1,326 @@
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 25.33333333px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f2f2f2;
+}
+.top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 1.76rem;
+  background-color: #ffc001;
+}
+.top .fenlei {
+  width: 0.88rem;
+  height: 1.4rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background: url(../images/classify.png) no-repeat;
+  background-size: 0.88rem 1.4rem;
+}
+.top .search {
+  flex: 1;
+}
+.top .search input {
+  width: 100%;
+  height: 1.32rem;
+  border-radius: 0.66rem;
+  background: #fff2cc;
+  margin-top: 0.24rem;
+  font-size: 0.5rem;
+  text-indent: 2em;
+  color: #666;
+}
+.top .dengru {
+  width: 1.5rem;
+  height: 1.4rem;
+  margin: 0.2rem;
+  font-size: 0.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.banner {
+  width: 15rem;
+  height: 7.36rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a {
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+.nav {
+  width: 15rem;
+  margin-top: 0.2rem;
+}
+.nav a {
+  float: left;
+  width: 3rem;
+  height: 2.84rem;
+  text-align: center;
+}
+.nav a img {
+  display: block;
+  width: 1.68rem;
+  height: 1.68rem;
+  margin: 0.22rem auto 0;
+}
+.nav a span {
+  display: block;
+  font-size: 0.5rem;
+  color: #333;
+  margin-top: 0.1rem;
+}
+.bgad {
+  display: flex;
+  margin: 0.48rem 0;
+}
+.bgad a {
+  flex: 1;
+  height: 4.68rem;
+}
+.bgad a img {
+  width: 100%;
+  height: 100%;
+}
+.bgad a:nth-child(1) {
+  flex: 2;
+}
+.bgad a:nth-child(2) {
+  border-left: 0.04px solid #fff;
+  border-right: 0.04px solid #fff;
+}
+.n1 {
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+.price {
+  display: flex;
+  width: 14.04rem;
+  height: 5.16rem;
+  margin: 0 0.48rem;
+  background-color: #fff;
+}
+.price .item {
+  flex: 1;
+}
+.price .item:nth-child(1) {
+  border-right: 0.02rem solid #ccc;
+}
+.price .item h3 {
+  font-size: 0.56rem;
+  margin: 0.36rem 0.16rem 0 0.48rem;
+}
+.price .item .title {
+  width: 7rem;
+  height: 1.16rem;
+}
+.price .item .title span,
+.price .item .title i {
+  float: left;
+  margin-top: 0.48rem;
+  font-size: 0.4rem;
+  font-weight: 700;
+}
+.price .item .title i {
+  margin: 0.4rem 0.1rem 0;
+}
+.price .item .title span {
+  display: block;
+  width: 0.68rem;
+  height: 0.56rem;
+  background-color: #ffcc00;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+.price .item p {
+  margin: 0.08rem 0 0 0.48rem;
+  font-size: 0.48rem;
+  line-height: 0.6rem;
+  color: #999;
+}
+.price .lowprice h3 {
+  float: left;
+}
+.price .lowprice ul {
+  overflow: hidden;
+  margin-top: 0.1rem;
+  padding-left: 0.56rem;
+}
+.price .lowprice ul li {
+  float: left;
+  width: 2.4rem;
+  height: 2.98rem;
+}
+.price .lowprice ul li img {
+  width: 100%;
+}
+.price .lowprice ul li p {
+  font-size: 0.52rem;
+  color: #F50;
+  margin-left: 0;
+  text-align: center;
+}
+.price .lowprice ul li p span {
+  font-size: 0.44rem;
+}
+.price .lowprice ul li:nth-child(1) {
+  margin-right: 1.1rem;
+}
+.price .msprice .cp {
+  overflow: hidden;
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
+}
+.price .msprice .cp a {
+  float: left;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0 0.4rem;
+}
+.price .msprice .cp a img {
+  width: 100%;
+}
+.price .msprice .cp a p {
+  width: 3rem;
+  height: 1.08rem;
+  text-align: center;
+  padding-top: 0.44rem;
+  margin-top: -0.4rem;
+  margin-left: -0.3rem;
+  font-size: 0.4rem;
+  background: url(../upload/bg1.png) no-repeat 0 0;
+  background-size: 3rem 1.08rem;
+}
+.tuijian {
+  display: flex;
+  margin: 0 0.48rem;
+  border-top: 0.04rem solid #ccc;
+  background-color: #fff;
+  border-radius: 0 0 0.2rem 0.2rem;
+}
+.tuijian .tjleft {
+  padding: 0.94rem 0.36rem 0;
+  width: 3.46rem;
+  height: 3.44rem;
+}
+.tuijian .tjleft p:nth-child(1) {
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #444;
+}
+.tuijian .tjleft p:nth-child(2) {
+  font-size: 0.48rem;
+  color: #999;
+}
+.tuijian .tuijright {
+  flex: 1;
+  display: flex;
+}
+.tuijian .tuijright a {
+  flex: 1;
+  text-align: center;
+}
+.tuijian .tuijright a img {
+  display: block;
+  width: 2rem;
+  margin: 0.4rem auto 0.2rem;
+}
+.tuijian .tuijright a p {
+  font-size: 0.44rem;
+  color: #333;
+}
+.foot {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 1.76rem;
+}
+.foot a {
+  flex: 1;
+  height: 1.76rem;
+  background-color: plum;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.foot a i {
+  display: block;
+  margin: 1px auto;
+  width: 1rem;
+  height: 1rem;
+  background: url(../images/sprite.png) -2.32rem -7.72rem;
+  background-size: 4.16rem 13.1rem;
+}

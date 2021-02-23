@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+  <head>  
+    <title>text7.html</title>  
+    <script type="text/javascript">  
+        function getMyYear(){  
+//年 的正则验证
+            var zz = /^[0-9]*$/  
+            // 获取输入框输入的数据  
+            var value = document.getElementById("year").value;  
+            // 计算数据  
+//如果输入的值是年
+            if(zz.test(value)){  
+//能被四整除并且不能被100整除 或者 能被400整除 的是闰年
+               if((value % 4 == 0 && value % 100 != 0) || value % 400 == 0){  
+//提示闰年
+                    alert(value + "是闰年");  
+                }else{  
+//如果不是， 提示 不是闰年
+                    alert(value + "不是闰年");  
+                } 
+//如果输入的不是年  ，提示 输入错误
+            }else{ 
+                alert("输入错误");  
+            }               
+        }  
+    </script>  
+  </head>      
+  <body>  
+    <input type="text" name="year" id="year"/><input type="button" value="计算" onclick="getMyYear()"/>  
+  </body>  
+</html>

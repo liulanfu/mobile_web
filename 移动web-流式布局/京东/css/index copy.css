@@ -1,0 +1,338 @@
+body{
+    width: 100%;
+    max-width: 640px;
+    min-width: 366px;
+    margin: auto;
+    /* height: 2000px; */
+    background-color:burlywood;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #ccc;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+ul li{
+    list-style: none;
+}
+.top{
+    height: 45px;
+    line-height: 45px;
+    background-color: #333;
+}
+.top ul li{
+    float: left;
+    height: 45px;
+    color: white;
+    text-align: center;
+}
+.top ul li:nth-child(1)
+{
+    width: 8%;
+    /* background-color: aquamarine; */
+}
+.top ul li:nth-child(1) img{
+    width: 10px;
+}
+.top ul li:nth-child(2)
+{
+    width: 10%;
+    /* background-color: blanchedalmond; */
+}
+.top ul li:nth-child(2) img{
+    margin-top: 8px;
+    width: 30px;
+}
+.top ul li:nth-child(3)
+{
+    width: 57%;
+    /* background: blueviolet; */
+}
+.top ul li:nth-child(4)
+{
+    width: 25%;
+    background-color: red;
+}
+.search_nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    border-top: 1px solid transparent;
+    background-color: rgb(99, 12, 27);
+}
+.search_nav .genduo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    
+    /* background-color: aqua; */
+}
+.search_nav .genduo img{
+    width: 20px;
+    height: 18px;
+    margin-top: 8px;
+    margin-left: 18px;
+}
+.search_nav .search_box{
+    position: relative;
+    height: 34px;
+    margin-right:50px;
+    margin-left: 50px;
+    border-radius: 17px;
+    margin-top: 3px;
+    background-color: #fff;
+}
+.search_nav .dengru{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 33px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    /* background-color: blue; */
+}
+.search_box .jd{
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/jd.png) no-repeat center center;
+    background-size: 20px 15px;
+}
+.search_box .jd::after{
+    content: "";
+    position: absolute; 
+    left: 30px;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+
+}
+.search_box .fdj{
+    position: absolute;
+    top: 8px;
+    left: 55px;
+    width: 20px;
+    height: 20px;
+    background:url(../images/jd-sprites.png) -83px 0px;
+    background-size: 200px;
+}
+.main-content {
+    margin-bottom: 60px;
+}
+.main-content .silder{
+    margin: 0 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.main-content .silder img{
+    width:100%;
+}
+.silder ul{
+    width: 700%;
+    overflow: hidden;
+    margin-left: -100%;
+
+}
+.silder ul li{
+    width: 14.286%;
+    float: left;
+}
+.silder ol{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.silder ol li{
+    list-style: none;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+}
+.silder ol li.current{
+    width: 16px;
+    border-radius: 4px;
+}
+.bj{
+    overflow: hidden;
+}
+.bj div{
+    width: 33.3333%;
+    float: left;
+    
+}
+.bj div img{
+    width: 100%;
+}
+.nav_list{
+    height: 162px;
+    margin: 0 15px;
+    border-radius: 10px;
+    background-color: white;
+   
+}
+.nav_list a{
+    float: left;
+    display: block;
+    width: 20%;
+    height: 74px;
+    text-align: center;
+}
+.nav_list a img{
+    width: 40px;
+    margin-top: 10px;
+}
+.newpic{
+    overflow: hidden;
+    padding: 15px;
+}
+.newpic a{
+    float: left;
+    width: 25%;
+}
+.newpic a:nth-child(1){
+    width: 50%;
+}
+.newpic a img{
+    width: 100%;
+}
+.shop{
+    overflow: hidden;
+    margin: 0 15px;
+}
+.shop .item{
+    width: 25%;
+    float: left;
+    height: 120px;
+    padding: 6.5px 0 5px 10px;
+    border-right: 1px solid rgb(219, 216, 216);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+ .item .shop_txt strong{
+    font-size: 16px;
+    font-weight: 700;
+}
+.shop .item:first-child .shop_txt strong,
+.shop .item:last-child .shop_txt strong{
+    color: transparent;
+}
+ .item .shop_txt p{
+    font-size: 12px;
+    color:#222;
+    margin-top: 3px;
+}
+.shop .item .pic{
+   width: 100%;
+   /* text-align: center; */
+   margin: .275rem .2rem 0;
+}
+.shop .item .pic img{
+    width: 60px;
+}
+ .title{
+    height:35px;
+    text-align: center;
+    margin-top: 10px;
+}
+.title img{
+    height: 100%;
+}
+.home{
+    margin: 10px 15px 0;
+    overflow: hidden;
+    background-color: white;
+}
+.home .item{
+    float: left;
+    width: 50%;
+   padding: 6.5px 0 5px;
+   box-sizing: border-box;
+}
+.home .item:nth-child(n+4){
+    float: left;
+    width: 25%;
+   padding: 6.5px 0 5px;
+   box-sizing: border-box;
+}
+.home .item .pic{
+    width: 100%;
+    padding: 0 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.home .item .pic img{
+    float: left;
+    width: 60px;
+    margin: 5.5px 5px 0;
+
+}
+.home .item .shop_txt{
+    padding-left:9px ;
+}
+.foot_nav{
+    width: 100%;
+    position: fixed;
+    max-width: 640px;
+    min-width: 320px;
+    bottom: 0;
+    background-color: white;
+}
+.foot_nav a{
+    display:block;
+    float: left;
+    width: 20%; 
+    text-align: center;
+}
+.foot_nav a img{
+    width: 65px;
+    height: 50px;
+}
+
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }

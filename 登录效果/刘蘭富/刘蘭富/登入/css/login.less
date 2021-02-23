@@ -1,0 +1,84 @@
+@media screen and (min-width:640px) {
+    html {
+        font-size: 64px !important;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    min-width: 320px;
+    max-width: 640px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+
+}
+
+.top{
+    padding: 3.75rem 1.25rem 0;
+    width: 100%;
+    height: 17.75rem;
+    background:-webkit-linear-gradient(-45deg,#6cc9b6, #3979cc) no-repeat;
+    border-top: 1px solid transparent;
+    .title{
+        width: 5.78125rem;
+        height: 1.171875rem;
+        text-align: center;
+        margin: .859375rem auto;
+        h3{
+            font-size: .59375rem;
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+    .list{
+        width: 100%;
+        ul li{
+            height: 1.1875rem;
+            width: 100%;
+            font-size: .40625rem;
+            input{
+                width: 100%;
+                height: 100%;
+                border:1px solid #ffffff;
+                border-radius: .625rem;
+                text-indent: 3em;
+                background-color: transparent;
+                color:#ffffff;
+                &::placeholder{
+                    color: #ffffff;
+                }
+            } 
+            &:nth-child(2){
+                margin: .484375rem 0;
+            }
+            &:nth-child(3){
+                margin-bottom: .296875rem;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    font-size: .5rem;
+                    border-radius: .5625rem;
+                    background-color: #56b3f5;
+                }
+            }
+            &:nth-child(4){
+                    height: .390625rem;
+                    text-align: center;
+                    color: #fff;
+                    a{
+                        font-size: .328125rem;
+                        color: #fff;
+                    }
+            }
+        }
+    }
+}

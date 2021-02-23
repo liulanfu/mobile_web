@@ -1,0 +1,298 @@
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 640px;
+    background: rgb(247, 247, 247);
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* height: 2900px; */
+    color: #666;
+    }
+.top{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #53b4ff;
+}
+.hymm{
+    position: absolute;
+    left: 6px;
+    top: 0;
+    width: 69px;
+    height: 20px;
+    line-height:45px;
+}
+.hymm img{
+    width: 69px;
+}
+.userlist{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+.userlist .user{
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.userlist .user::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: block;
+    width: 1px;
+    height: 23px;
+    background-color: #ccc;
+}
+.userlist .user span{
+    display: block;
+    height: 21px;
+    width: 23px;
+    background: url(../images/user.png) no-repeat;
+    background-size: 21px 23px;
+}
+.userlist .more{
+    position: absolute;
+    top: 14px;
+    right: 11px;
+}
+.userlist .more span{
+    display: block;
+    height: 21px;
+    width: 18px;
+    background: url(../images/more.png) no-repeat;
+    background-size: 21px 18px;
+}
+.banner{
+    width: 100%;
+}
+.bg img{
+    width: 100%;
+}
+.play_list{
+    overflow: hidden;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.play_list a{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 80px;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.play_list a{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.play_list a:nth-child(n+5){
+    border-bottom: 0;
+}
+.play_list a:nth-child(4n){
+    border-right: 0;
+}
+.play_list a p{
+    font-size: 10px;
+}
+
+.play_list a span{
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 10px auto;
+    background:url(../images/02.png) no-repeat;
+    background-size: 35px;
+}
+.search{
+    margin: 0 10px 10px;
+    background-color: #fff;
+    position: relative;
+}
+.search .tiez{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #ccc;
+    /* background-color: salmon; */
+}
+.search .tiez::after{
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 8px;
+    background: url(../images/形状5@2x.png);
+    background-size: 11px 8px;
+}
+.search .inp{
+    margin: 0 58px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.search .inp input{
+    width: 100%;
+    height: 34px;
+    text-indent: 1em;
+}
+.search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 36px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background-color: rgb(61,159,234);
+}
+.project{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.project .pj_title{
+    padding-left:10px;
+    line-height: 37px;
+    border-bottom: 1px dashed #ccc;
+}
+.project .pj_title p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project .pj_title span{
+    color: rgb(83,180,255);
+}
+.pj_txt{
+    padding: 13px 10px
+}
+.txt_top .username{
+    width: 14%;
+    text-align: center;
+    float: left;
+    color: rgb(83,180,255);
+}
+.txt_top .username img{
+    width: 40px;
+    margin-bottom: 8px;
+}
+.txt_top p{
+    margin-left: 10px;
+}
+.user-txt{
+    float: left;
+    width: 86%;
+}
+.look{
+    text-align: right;
+}
+.look p{
+    line-height: 36px;
+    color: #ccc;
+}
+.look span{
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    margin-right: 3px;
+    background: url(../images/list1.png) no-repeat 0 -256px;
+    background-size: 104px 268px;
+    /* vertical-align: middle; */
+}
+.look span:nth-child(2){
+    background-position-x: -49px;
+}
+.look span:nth-child(3){
+    background-position-x: -92px;
+}
+.pic{
+    overflow: hidden;
+}
+.pic .pic_item{
+    float: left;
+    width:33.3333%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.pic .pic_item img{
+    width:100%;
+}
+.pic .pic-item{
+    width: 100%;
+}
+.pic .pic-item img{
+    width: 100%;
+}
+.userhead{
+    background-color: white;
+    margin-bottom: 50px;
+}
+.userhead a{
+    display:block;
+    float: left;
+    width: 20%;
+    padding: 10px 0;
+}
+.userhead a span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/图层14@2x.png) no-repeat;
+    background-size: 40px;
+    margin: 10px auto 6px;
+}
+.userhead a p{
+    text-align: center;
+    font-size: 10px;
+}
+.foot_nav{
+    position: fixed;
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    bottom: 0;
+    background-color: #f8f8f8;
+}
+.foot_nav a{
+    float: left;
+    display: block;
+    width: 20%;
+    text-align: center;
+}
+.foot_nav a span{
+    display: block;
+    width: 27px;
+    height: 23px;
+    margin: 7px auto 0;
+    background: url(../images/list3.png) no-repeat 0 0;
+    background-size: 272px 23px;
+}
+.foot_nav a:nth-child(2) span{
+    background-position-x: -62px;
+}
+.foot_nav a:nth-child(3) img{
+    margin-top: -6px;
+    width: 47px;
+}
+.foot_nav a:nth-child(4) span{
+    background: url(../images/形状4拷贝@2x.png) no-repeat;
+    background-size: 27px 23px;
+}
+.foot_nav a:nth-child(5) span{
+    background-position-x: -250px;
+}
+.foot_nav i{
+    font-size: 10px;
+}
